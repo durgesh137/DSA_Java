@@ -1,4 +1,4 @@
-package problems;
+package problems.numbers;
 
 /**
  * Problem: Reverse a Number
