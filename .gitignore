@@ -1,23 +1,61 @@
-# Compiled class file
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IntelliJ / JetBrains
+*.iml
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries/
+.idea/**/shelf/
+
+# Build outputs
+/out/
+/build/
+/target/
+/bin/
+
+# Java artifacts
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Maven / Gradle
+/.mvn/
+/.gradle/
+/gradle-app.setting-cache
+gradle-wrapper.jar
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Logs and reports
+*.log
+coverage/
+jacoco.exec
+test-reports/
+target/surefire-reports/
+
+# Secrets, keys, env files
+*.keystore
+*.jks
+*.p12
+*.pem
+*.crt
+*.key
+.env
+.env.local
+secrets/
+
+# Temporary and editor files
+*.swp
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
