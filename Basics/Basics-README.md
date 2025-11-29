@@ -58,7 +58,7 @@ This module contains all basic beginner-friendly programming problems and exampl
 
 8. **Fibonacci Sequence**
    - Description: Generate Fibonacci numbers using iterative, recursive, and DP approaches
-   - Implementation: `problems/Fibonacci.java`
+   - Implementation: `problems.recursion.FibonacciSequence.java`
    - Example: 0, 1, 1, 2, 3, 5, 8, 13, 21...
    - Time Complexity: O(n) iterative/DP, O(2ⁿ) naive recursive
    - Space Complexity: O(1) iterative, O(n) DP
@@ -69,6 +69,50 @@ This module contains all basic beginner-friendly programming problems and exampl
    - Example: `16` is power of 2, `27` is power of 3
    - Time Complexity: O(log n) or O(1) for power of 2 using bit tricks
    - Space Complexity: O(1)
+
+### String-based Problems
+
+10. **Reverse a String**
+    - Description: Reverse a string using different approaches (StringBuilder, char array, recursion)
+    - Implementation: `problems.strings.ReverseString.java`
+    - Example: Input `"hello"` → Output `"olleh"`
+    - Time Complexity: O(n)
+    - Space Complexity: O(n)
+
+11. **Palindrome String**
+    - Description: Check if a string is a palindrome (ignoring case and special characters)
+    - Implementation: `problems.strings.PalindromeString.java`
+    - Example: `"A man a plan a canal Panama"` → `true`
+    - Time Complexity: O(n)
+    - Space Complexity: O(1)
+
+12. **Character Frequency / Count Characters**
+    - Description: Count frequency of each character in a string
+    - Implementation: `problems.strings.CharacterFrequency.java`
+    - Example: Input `"hello"` → h:1, e:1, l:2, o:1
+    - Time Complexity: O(n)
+    - Space Complexity: O(k) where k is unique characters
+
+13. **Count Vowels and Consonants**
+    - Description: Count number of vowels and consonants in a string
+    - Implementation: `problems.strings.VowelConsonantCount.java`
+    - Example: Input `"Hello World"` → Vowels: 3, Consonants: 7
+    - Time Complexity: O(n)
+    - Space Complexity: O(1)
+
+14. **First Non-Repeating Character**
+    - Description: Find the first unique character in a string
+    - Implementation: `problems.strings.FirstUniqueChar.java`
+    - Example: Input `"leetcode"` → Output `'l'`, Input `"loveleetcode"` → Output `'v'`
+    - Time Complexity: O(n)
+    - Space Complexity: O(1) - fixed alphabet size
+
+15. **Anagram Check**
+    - Description: Check if two strings are anagrams (same characters, different order)
+    - Implementation: `problems.strings.AnagramCheck.java`
+    - Example: `"listen"` and `"silent"` → `true`
+    - Time Complexity: O(n log n) sorting, O(n) using frequency count
+    - Space Complexity: O(1) or O(n)
 
 
 ## How to Run
@@ -100,6 +144,13 @@ Basics/
     │   │   ├── ArmstrongNumber.java
     │   │   ├── PrimeNumber.java
     │   │   └── FindSumAndDigitCount.java
+    │   ├── strings/              # String manipulation problems
+    │   │   ├── ReverseString.java
+    │   │   ├── PalindromeString.java
+    │   │   ├── CharacterFrequency.java
+    │   │   ├── VowelConsonantCount.java
+    │   │   ├── FirstUniqueChar.java
+    │   │   ├── AnagramCheck.java
     │   ├── operations/           # Mathematical operations
     │   │   ├── GcdLcm.java
     │   │   └── PowerCheck.java
@@ -113,6 +164,7 @@ Basics/
 ## Package Organization
 
 - **`problems.numbers`** - Basic number manipulation and digit-based problems (reverse, palindrome, Armstrong, prime check, sum of digits)
+- **`problems.strings`** - String manipulation problems from beginner to medium level (reverse, palindrome, anagrams, compression, validation, etc.)
 - **`problems.operations`** - Mathematical operations and algorithms (GCD, LCM, power checks)
 - **`problems.recursion`** - Recursion-based implementations (factorial, Fibonacci)
 - **`samples`** - Utility helper methods and sample code
