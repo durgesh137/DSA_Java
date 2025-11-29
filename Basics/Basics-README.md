@@ -114,6 +114,42 @@ This module contains all basic beginner-friendly programming problems and exampl
     - Time Complexity: O(n log n) sorting, O(n) using frequency count
     - Space Complexity: O(1) or O(n)
 
+16. **Remove Duplicates from String**
+    - Description: Remove duplicate characters while preserving order
+    - Implementation: `problems.strings.level1.RemoveDuplicates.java`
+    - Example: Input `"programming"` → Output `"progamin"`
+    - Time Complexity: O(n)
+    - Space Complexity: O(n)
+
+17. **String Compression**
+    - Description: Compress string using character counts (e.g., aabbbcccc → a2b3c4)
+    - Implementation: `problems.strings.level1.StringCompression.java`
+    - Example: Input `"aaabbcccc"` → Output `"a3b2c4"`
+    - Time Complexity: O(n)
+    - Space Complexity: O(n)
+
+18. **Reverse Words in a Sentence**
+    - Description: Reverse the order of words in a sentence
+    - Implementation: `problems.strings.level1.ReverseWords.java`
+    - Example: Input `"Hello World Java"` → Output `"Java World Hello"`
+    - Time Complexity: O(n)
+    - Space Complexity: O(n)
+
+19. **Check if String Contains Only Digits**
+    - Description: Validate if a string contains only numeric characters
+    - Implementation: `problems.strings.level1.DigitValidator.java`
+    - Example: Input `"12345"` → `true`, Input `"123a45"` → `false`
+    - Time Complexity: O(n)
+    - Space Complexity: O(1)
+
+20. **String Rotation Check**
+    - Description: Check if one string is a rotation of another
+    - Implementation: `problems.strings.level1.StringRotation.java`
+    - Example: `"waterbottle"` is rotation of `"erbottlewat"` → `true`
+    - Time Complexity: O(n)
+    - Space Complexity: O(n)
+
+
 
 ## How to Run
 
@@ -151,6 +187,12 @@ Basics/
     │   │   ├── VowelConsonantCount.java
     │   │   ├── FirstUniqueChar.java
     │   │   ├── AnagramCheck.java
+    │   │   └── level1/           # Intermediate string problems
+    │   │       ├── RemoveDuplicates.java
+    │   │       ├── StringCompression.java
+    │   │       ├── ReverseWords.java
+    │   │       ├── DigitValidator.java
+    │   │       └── StringRotation.java
     │   ├── operations/           # Mathematical operations
     │   │   ├── GcdLcm.java
     │   │   └── PowerCheck.java
