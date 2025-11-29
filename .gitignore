@@ -58,4 +58,7 @@ secrets/
 *~
 Thumbs.db
 ehthumbs.db
-Desktop.ini
+Desktop.ini# IntelliJ / JetBrains
+*.iml
+.idea/misc.xml
+.idea/**/copilot.data.migration.agent.xml
