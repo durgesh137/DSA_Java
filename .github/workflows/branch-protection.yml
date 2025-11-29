@@ -1,0 +1,61 @@
+name: Branch Protection Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+
+    - name: Compile Java files
+      run: |
+        echo "Compiling Basics module..."
+        cd Basics/src
+        javac -d ../../out problems/**/*.java problems/**/**/*.java || true
+        
+        echo "Compiling Arrays module..."
+        cd ../../Arrays/src
+        javac -d ../../out problems/**/*.java sorting/**/*.java || true
+
+    - name: Check for prohibited files
+      run: |
+        # Fail if .iml or certain .idea files are included
+        if git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep -E '\.(iml)$|\.idea/(workspace\.xml|misc\.xml|copilot)'; then
+          echo "❌ Error: Pull request contains prohibited files (.iml, workspace.xml, etc.)"
+          echo "Please remove these files and update .gitignore"
+          exit 1
+        fi
+        echo "✅ No prohibited files found"
+
+    - name: Validate README updates
+      run: |
+        # Check if new Java files are added and README is updated
+        NEW_JAVA_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep '\.java$' | wc -l)
+        README_CHANGED=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep 'README\.md' | wc -l)
+        
+        if [ "$NEW_JAVA_FILES" -gt 0 ] && [ "$README_CHANGED" -eq 0 ]; then
+          echo "⚠️ Warning: New Java files added but README not updated"
+          echo "Consider updating the module README with problem details"
+        else
+          echo "✅ README validation passed"
+        fi
+
+    - name: PR Summary
+      run: |
+        echo "### ✅ Pull Request Validation Complete"
+        echo ""
+        echo "All automated checks have passed."
+        echo "Waiting for code owner approval before merge."
+

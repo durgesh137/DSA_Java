@@ -49,6 +49,15 @@ target/surefire-reports/
 *.pem
 *.crt
 *.key
+
+# Local documentation files (explanatory, not for repo)
+.github/BRANCH_PROTECTION.md
+.github/PROTECTION_EXPLAINED.md
+.github/PROTECTION_FLOW.md
+.github/QUICK_SETUP.md
+.github/QUICK_SUMMARY.md
+.github/SECURITY_CHECKLIST.md
+.github/COMMIT_ANALYSIS.md
 .env
 .env.local
 secrets/

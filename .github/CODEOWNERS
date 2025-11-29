@@ -1,0 +1,11 @@
+# CODEOWNERS file
+# This file defines who owns the code and must approve changes
+# Only the specified users can approve and merge PRs
+
+# Global owner - owns everything in the repo
+* @durgesh137
+
+# Specific module owners (optional)
+/Basics/ @durgesh137
+/Arrays/ @durgesh137
+
