@@ -2,21 +2,21 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+Icon?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # IntelliJ / JetBrains
 *.iml
 .idea/
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries/
-.idea/**/shelf/
+**/*.iml
 
 # Build outputs
-/out/
-/build/
-/target/
-/bin/
+out/
+build/
+target/
+bin/
 
 # Java artifacts
 *.class
@@ -25,9 +25,9 @@
 *.ear
 
 # Maven / Gradle
-/.mvn/
-/.gradle/
-/gradle-app.setting-cache
+.mvn/
+.gradle/
+gradle-app.setting-cache
 gradle-wrapper.jar
 
 # Eclipse
@@ -56,6 +56,4 @@ secrets/
 # Temporary and editor files
 *.swp
 *~
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+
