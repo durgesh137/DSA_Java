@@ -82,6 +82,8 @@ Given a string `s`, return the longest palindromic substring in `s`.
 - [x] Longest Substring Without Repeating Characters (3)
 - [x] Longest Palindromic Substring (5)
 - [x] Longest Consecutive Sequence (128)
+- [x] Word Break (139)
+- [x] Palindromic Substrings (647)
 - [ ] Best Time to Buy and Sell Stock (121)
 - [ ] Contains Duplicate (217)
 - [ ] Product of Array Except Self (238)
