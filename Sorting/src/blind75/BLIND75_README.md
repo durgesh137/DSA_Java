@@ -43,6 +43,7 @@ Given an unsorted array of integers `nums`, return the length of the longest con
 
 ## Related Resources
 
+- [Core Concepts & Techniques](concepts/README.md) 🔍
 - [Sorting Module README](../../../Sorting-README.md)
 - [Patterns Library](../patterns/PATTERNS_README.md)
 - [Problem Solutions](../problems/)
