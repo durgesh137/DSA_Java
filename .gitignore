@@ -58,6 +58,12 @@ target/surefire-reports/
 .github/QUICK_SUMMARY.md
 .github/SECURITY_CHECKLIST.md
 .github/COMMIT_ANALYSIS.md
+
+# Temporary tracker files (planning, not for repo)
+*.todo
+*.TODO
+PROBLEMS_TRACKER.todo
+*_TRACKER.todo
 .env
 .env.local
 secrets/

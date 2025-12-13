@@ -31,6 +31,12 @@ DSA_Java/
 │       │   └── level2/          # Advanced array problems
 │       ├── samples/
 │       └── sorting/             # Sorting algorithms
+├── Sorting/                     # LeetCode Sorting Problems
+│   ├── Sorting-README.md        # Detailed module documentation
+│   └── src/
+│       ├── problems/            # 94 LeetCode sorting problems
+│       ├── patterns/            # Reusable sorting patterns
+│       └── samples/             # Helper utilities
 └── [Future Modules]
     ├── LinkedLists/
     ├── Stacks/
@@ -63,7 +69,7 @@ Foundational programming problems covering fundamental concepts essential for an
 ---
 
 ### 2. **Arrays Module**
-*Status: ✅ Active - 8 Problems*
+*Status: ✅ Active - 11 Problems*
 
 Comprehensive coverage of array manipulation, searching, and algorithmic problems.
 
@@ -83,7 +89,31 @@ Comprehensive coverage of array manipulation, searching, and algorithmic problem
 
 ---
 
-### 3. **Future Modules** 
+### 3. **Sorting Module**
+*Status: ✅ Active - 94 LeetCode Problems + Blind 75*
+
+Comprehensive collection of LeetCode sorting problems solved sequentially with pattern identification, plus curated Blind 75 interview problems.
+
+**Topics Covered:**
+- **LeetCode Problems**: All 94 easy-level sorting problems from LeetCode
+- **Blind 75**: Curated collection of must-do interview problems with detailed algorithmic explanations
+- **Pattern Library**: Reusable sorting patterns and techniques extracted from solutions
+- **Problem-Solving Strategies**: Two-pointer, frequency counting, greedy, custom comparators
+- **Helper Utilities**: Testing and debugging tools
+
+**Key Features:**
+- Sequential problem solving (Problems 1-94)
+- Blind 75 problems with crisp algorithms and step-by-step walkthroughs
+- Pattern documentation for reusable techniques
+- Multiple approaches with complexity analysis
+- Dedicated patterns package for high-level problem-solving strategies
+
+📖 [View Sorting Module Documentation](./Sorting/Sorting-README.md)  
+🎯 [View Blind 75 Problems](./Sorting/src/blind75/BLIND75_README.md)
+
+---
+
+### 4. **Future Modules** 
 *Status: 🔜 Planned*
 
 #### Coming Soon:
@@ -161,14 +191,18 @@ public class ProblemName {
 | Module | Problems Solved | Status | Difficulty Range |
 |--------|----------------|--------|------------------|
 | Basics | 20 | ✅ Active | Beginner |
-| Arrays | 8 | ✅ Active | Beginner → Medium |
+| Arrays | 11 | ✅ Active | Beginner → Medium |
+| Sorting (LeetCode) | 0 / 94 | ✅ Active | Easy |
+| Blind 75 | 2 / 75 | ✅ Active | Easy → Hard |
 | Linked Lists | 0 | 🔜 Planned | Beginner → Advanced |
 | Stacks & Queues | 0 | 🔜 Planned | Beginner → Medium |
 | Trees | 0 | 🔜 Planned | Medium → Advanced |
 | Graphs | 0 | 🔜 Planned | Medium → Advanced |
 | Dynamic Programming | 0 | 🔜 Planned | Medium → Advanced |
 
-**Total Problems Solved: 28**
+**Total Problems Solved: 33**  
+**LeetCode Problems: 0 / 94**  
+**Blind 75 Problems: 2 / 75** ⭐
 
 ## 🎓 Learning Path
 
@@ -177,11 +211,13 @@ public class ProblemName {
 2. Move to **Basics Module** - Strings section
 3. Practice **Arrays Module** - Basic problems
 4. Continue with **Arrays Module** - Sorting algorithms
+5. Attempt **Sorting Module** - LeetCode problems sequentially
 
 ### For Intermediate:
 1. Complete **Basics Module** level1 string problems
 2. Work through **Arrays Module** level2 problems
-3. Move to **Linked Lists** and **Stacks/Queues** (when available)
+3. Tackle **Sorting Module** LeetCode problems
+4. Move to **Linked Lists** and **Stacks/Queues** (when available)
 
 ### For Advanced:
 1. Focus on **Trees** and **Graphs** modules
