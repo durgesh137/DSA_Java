@@ -41,6 +41,32 @@ Given an unsorted array of integers `nums`, return the length of the longest con
 
 ---
 
+## String Problems
+
+### [Problem 3: Longest Substring Without Repeating Characters](docs/LongestSubstringWithoutRepeatingChars_README.md)
+**Difficulty:** Medium  
+**Topics:** String, Sliding Window, Hash Table
+
+Given a string `s`, find the length of the longest substring without repeating characters.
+
+**Solution Approach:** Sliding Window with Character Index Array  
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+### [Problem 5: Longest Palindromic Substring](docs/LongestPalindromeSubstring_README.md)
+**Difficulty:** Medium  
+**Topics:** String, Two Pointers, Dynamic Programming
+
+Given a string `s`, return the longest palindromic substring in `s`.
+
+**Solution Approach:** Expand Around Center  
+**Time Complexity:** O(n²)  
+**Space Complexity:** O(1)
+
+---
+
 ## Related Resources
 
 - [Core Concepts & Techniques](concepts/README.md) 🔍
@@ -53,6 +79,8 @@ Given an unsorted array of integers `nums`, return the length of the longest con
 ## Progress Tracker
 
 - [x] Two Sum (1)
+- [x] Longest Substring Without Repeating Characters (3)
+- [x] Longest Palindromic Substring (5)
 - [x] Longest Consecutive Sequence (128)
 - [ ] Best Time to Buy and Sell Stock (121)
 - [ ] Contains Duplicate (217)
